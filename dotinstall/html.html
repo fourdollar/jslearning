@@ -1,0 +1,113 @@
+<!DOCTYPE html>            >
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <!--文書の説明-->
+        <meta name="description" content="初めてのHTML文書です">
+        <title>初めてのHTML</title>
+        <!--<style>
+            body {background:skyblue;}
+        </style>-->
+        <link rel="stylesheet" href="mystyles.css"
+    </head>
+    <body>
+        <!--class:複数の要素
+        id: ひとつしかない要素
+        class: 複数ある要素
+        style: スタイルを直接指定-->
+
+        <!--
+        header:
+        footer:
+        nav: ナビゲーション
+        article: 独立しているコンテンツ
+        aside: 副次的なコンテンツ
+        section: それ以外の情報の塊
+        h1 - h6:
+        -->
+
+        <!--
+        p: 段落
+        hr: 水平線
+        pre: 改行や字下げを保持
+        blockquote: 引用
+        div: スタイリング
+        -->
+
+        <!--
+        ol (ordered list) / ul (unordered list) /  li (list item)
+        dl (definition list) / dt (definition term) / dd (definition description)
+        -->
+        <!--
+        strong 強調
+        br　改行
+        span　テキストの一部に対して何らかの処理を行うために使う
+        -->
+<!--
+table
+thead
+tbody
+tr: table row
+th: table header
+td: table data
+-->
+
+        <header>
+            <h1>おいしいごはん！</h1>
+            <nav>
+                - ホーム
+                - このサイトについて
+                - プロフィール
+            </nav>
+        </header>
+
+        <section>
+            <article>
+                <h1>おいしいごはん</h1>
+                <p>至高のTKG → <a href="more.html">もっと見る</a> → <a href="#stuff">材料に</a></p>
+                <h2 id="stuff">材料</h2>
+                <ul>
+                  <li><a href="http://dotinstall.com" target="_blank"><span style="color:gold;">卵</span></a></li>
+                  <li>しょうゆ</li>
+                  <li>ごはん</li>
+                </ul>
+                <h2>手順</h2>
+                <ol>
+                    <li>まぜる</li>
+                    <li>かける</li>
+                </ol>
+                <h2>定義</h2>
+                <dl>
+                    <dt>TKG</dt>
+                    <dd>TAMAGO KAKE GOHAN</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section>
+            <h1>新着のおいしいごはん</h1>
+            <article>
+                <h1>おいしいごはん #32</h1>
+                はもしゃぶ
+            </article>
+            <article>
+                <h1>おいしいごはん #31</h1>
+                スリランカカレー
+            </article>
+        </section>
+
+        <aside>
+            <h1>おすすめレシピ本</h1>
+            - BOOK 1
+            - BOOK 2
+            - BOOK 3
+        </aside>
+
+        <footer>
+            このサイトは @taguchi によって運営されています。
+        </footer>
+
+        <p id="message">こんにちは</p>
+        <p class="message" style="background:black;">こんにちは</p>
+    </body>
+</html>

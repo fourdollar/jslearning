@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <!--文書の説明-->
+        <meta name="description" content="初めてのHTML文書です">
+        <title>初めてのHTML</title>
+        <!--<style>
+            body {background:skyblue;}
+        </style>-->
+        <link rel="stylesheet" href="mystyles.css"
+    </head>
+
+    <body>
+    <!--
+    form
+    action: どこに送るか？
+    method: get / post
+    input
+    -->
+
+<!--
+input
+    text
+    submit
+    password
+    hidden
+-->
+    <article>
+        <h1>アンケート</h1>
+        <form action="survey.js" method="post">
+            <!-- <p>メールアドレス: <input type="text" name="email" size="50" maxlength="5" value="abc"></p> -->
+            <p>メールアドレス: <input type="text" name="email" size="50" placeholder="please enter email"></p>
+            <p>メールアドレス: <input type="email" name="email" required></p>
+            <p>料金: <input type="number" name="price"></p>
+            <p>誕生日: <input type="date" name="birthday"></p>
+            <p>ログイン: <input type="password" name="password"></p>
+            <input type="hidden" name="user_id" value="23423">
+            <p><input type="submit" value="送信！"></p>
+            <p>
+                コメント:
+                <textarea name="comment" cols="40" rows="5">コメント</textarea>
+            </p>
+            <p>
+            <p>
+                Phone:
+                <label><input type="checkbox" name="phone" value="android" checked> Android</label>
+                <input type="checkbox" name="phone" value="iphone" id="iphone"> <label for="iphone">iPhone</label>
+            </p>
+            <p>
+                Color:
+                <input type="radio" name="color" value="red" checked> Red
+                <input type="radio" name="color" value="blue"> Blue
+            </p>
+            <p>City:
+                <select name="city">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka" selected>Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
+            </p>
+            <p>City:
+                <select name="city" multiple size="5">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka" selected>Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
+            </p>
+                <button type="submit"><strong>送信！</strong></button>
+            </p>
+            <p>
+                <button type="button">処理をする！</button>
+            </p>
+        </form>
+    </article>
+
+    </body>
+</html>
